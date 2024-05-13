@@ -8,21 +8,21 @@
 // Valor total da compra acima de R$ 200,00: desconto de 20%.
 // Exiba o valor final da compra com o desconto aplicado.
 
-let valorTotal = parseFloat(prompt("Informe o valor total da compra: "))
+// let valorTotal = parseFloat(prompt("Informe o valor total da compra: "))
 
-let desconto;
+// let desconto;
 
-if (valorTotal <= 100) {
-    desconto = 0;
-    console.log("O valor de desconto foi: " + desconto)
-} else if (desconto <= 200) {
-    desconto = 0.1
-    console.log("O valor d edesconto foi: " + (desconto * 100) + "%");
-} else {
-    desconto = 0.2
-    console.log("O valor de desconto foi: " + (desconto * 100) + "%");
-}
+// if (valorTotal <= 100) {
+//     desconto = 0;
+//     console.log("O valor de desconto foi: " + desconto)
+// } else if (desconto <= 200) {
+//     desconto = 0.1
+//     console.log("O valor d edesconto foi: " + (desconto * 100) + "%");
+// } else {
+//     desconto = 0.2
+//     console.log("O valor de desconto foi: " + (desconto * 100) + "%");
+// }
 
-let valorFinal = valorTotal - (valorTotal * desconto)
+// let valorFinal = valorTotal - (valorTotal * desconto)
 
-console.log("O valor final da compra com desconto R$ " + valorFinal.toFixed(2))
+// console.log("O valor final da compra com desconto R$ " + valorFinal.toFixed(2))
