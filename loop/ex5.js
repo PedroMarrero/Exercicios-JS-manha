@@ -1,16 +1,19 @@
 // 5. Imprimir os primeiros 10 números da sequência de Fibonacci.
 
-// function fibonacci(n) {
-//     let fib = [0, 1]; // Inicializamos o array com os dos primeros números de Fibonacci
 
-//     // Calculamos os seguintes números de Fibonacci
-//     for (let i = 2; i < n; i++) {
-//         fib.push(fib[i - 1] + fib[i - 2]);
-//     }
+// let fib1 = 1
+// let fib2 = 1
 
-//     return fib;
+
+// console.log("Os primeiros 10 números da sequência de fibonacci são: ")
+// console.log(fib1);
+// console.log(fib2);
+
+// for (let i = 2; i < 10; i++){
+//     let nextFib = fib1 + fib2;
+//     console.log(nextFib)
+
+// fib1 = fib2
+// fib2 = nextFib
 // }
 
-// // Imprimir os primeros 10 números de Fibonacci
-// console.log("os primeros 10 números de Fibonacci sao:");
-// console.log(fibonacci(10));

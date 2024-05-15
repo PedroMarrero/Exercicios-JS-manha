@@ -9,4 +9,4 @@
 //     numero++;
 // }
 
-// console.log("a soma dos números de 1 a 100 são:", soma);
+// console.log("a soma dos números de 1 a 100 é: " + soma);
