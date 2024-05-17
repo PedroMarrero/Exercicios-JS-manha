@@ -2,99 +2,133 @@
 // para ser executado. Faça com que o menu repita a sua execução, 
 // disponibilidade as opções para o usuário, até que seja digitado "sair"
 
-// function saudacao() {
+function exercicioDia() {
+    let dia = prompt("digite um numero de 1 a 7: ") 
 
-//     let nomePessoa = prompt("Digite seu nome: ")
-    
-//     let horaAtual = new Date().getHours()
-    
-//     if (horaAtual > 6 && horaAtual < 13) {
-    
-//         window.alert("Bom dia " + nomePessoa)
-    
-//     } else if (horaAtual >= 13 && horaAtual < 18) {
-    
-//         window.alert("Boa Tarde " + nomePessoa)
-    
-//     } else {
-    
-//         window.alert("Boa Noite " + nomePessoa)
-//     }
+    if (dia == 1)  {console.log("hoje e segunda feira")}
 
-// } 
+    if (dia == 2)  {console.log("hoje e terca feira")}
 
-// let opcao = window.prompt("MENU\nDigite a opção desejada: \n\n1 - Exemplo funções")
+    if (dia == 3)  {console.log("hoje e quarta feira")}
 
-// switch (opcao){
-//     case "1":
+    if (dia ==4)  {console.log("hoje e quinta feira")}
 
-//         saudacao()
-        
-//     break;
+    if (dia == 5)  {console.log("hoje e sexta feira")}
 
-//     default:
-//         break;
-// }
+    if (dia == 6) {console.log("hoje e sabado")}
 
-
-// function programaNumero() {
-
-// let numero;
-
-// do {
-//     numero = parseInt(prompt("Digite um número (digite 0 para sair):"));
-// } while (numero !== 0);
-
-// console.log("Você digitou 0. O programa terminou.");
-// }
-
-// programaNumero()
-
-// let opcao = window.prompt("MENU\nDigite a opção desejada: \n\n1 - programa")
-
-// switch (opcao){
-//     case "1":
-
-//         programaNumero()
-        
-//     break;
-
-//     default:
-//         break;
-// }
+    if (dia == 7)  {console.log("domigo")}
+}
 
 
 
+function exercicioParImpar () {
+let numero = parseInt(prompt("digite um numero: "))
 
-// function contagemRegressiva(){
+if (numero % 2 == 0) {console.log("numero par!") }
 
-//     let numero = parseInt(prompt("Digite um número para a contagem regressiva:"));
-    
-//     if (!isNaN(numero) && numero >= 0) {
-//             console.log("Contagem regressiva de ${numero} até 0:");
-        
-//             while (numero >= 0) {
-//                     console.log(numero);
-//                     numero--;
-//                 }
-//             } else {
-//                     console.log("Por favor, digite um número válido maior ou igual a 0.");
-//                 }
-//                 console.log("Contagem regressiva finalizada");
-//             }
+else {console.log("numero impar!")}
+}
 
-// contagemRegressiva()
 
-// let opcao = window.prompt("MENU\n Digite a opção desejada: \n\n1 - Contagem")
 
-// switch (opcao){
-//     case "1":
+function exercicioMedia () {
+    let nota1 = parseInt(prompt("adicione a primeira nota: "))
+let nota2 = parseInt(prompt("adicione a segunda nota: "))
+let nota3 = parseInt(prompt("adicione a terceira nota: "))
+let nota4 = parseInt(prompt("adicione a quarta nota: "))
 
-//         contagemRegressiva()
-        
-//     break;
+let media = (nota1 + nota2 + nota3 + nota4) / 4
 
-//     default:
-//         break;
-// }
 
+if(media >= 7){
+    console.log("APROVADO");
+}
+
+else if(media < 7 && media >= 5){
+    console.log("RECUPERAÇÃO");
+}
+
+else{
+    console.log("REPROVADO");
+}
+
+}
+
+
+
+function Verificaçãodenúmerosemordemcrescente () {
+
+let primeiroNumero = parseInt(prompt("Digite o primeiro número: "));
+let segundoNumero = parseInt(prompt("Digite o segundo número: "));
+let terceiroNumero = parseInt(prompt("Digite o terceiro número: "));
+
+if(primeiroNumero < segundoNumero && segundoNumero < terceiroNumero){
+    console.log("Os números estão em ordem crescente!!!")
+}
+else{
+    console.log("Os números NÃO estão em ordem crescente!!!")
+}
+}
+
+
+
+function eImprimirnúmerosparesde1a10 () {
+    for (let i = 2; i <= 10; i += 2) {
+        console.log(i);
+    }
+}
+
+
+
+function Imprimirosprimeiros10númerosdasequênciadeFibonacci () {
+
+const numero = parseInt(prompt("Coloque um numero para realizarmos a sua tabuada ate o 10:"));
+
+if (isNaN(numero)) {
+    console.log("Por favor, ingrese un número válido.");
+} else {
+    console.log(`Tabuada de ${numero}:`);
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${numero} x ${i} = ${numero * i}`);
+    }
+}
+}
+
+let resposta = window.prompt("MENU\nDigite a opcao desejada: \n\n1 - Exercicio Dia \n\n2 - Exercicio Par ou Impar \n\n3 - Exercicio Média \n\n4 - Exercicio Verificação de números em ordem crescente \n\n5 - Exercicio Imprimir números pares de 1 a 10 \n\n6 - Exercicio Imprimir os primeiros 10 números da sequência de Fibonacci")
+
+while (resposta != "sair") {
+
+
+switch (resposta) {
+    case "1":
+        exercicioDia()
+        break;
+
+    case "2":
+        exercicioParImpar()
+        break;
+
+    case "3":
+        exercicioMedia ()
+        break;
+
+    case "4":
+        Verificaçãodenúmerosemordemcrescente()
+        break;    
+
+    case "5":
+        eImprimirnúmerosparesde1a10()
+        break;
+
+    case "6":
+        Imprimirosprimeiros10númerosdasequênciadeFibonacci()
+        break;
+
+    default:
+        break
+}
+
+resposta = window.prompt("MENU\nDigite a opcao desejada: \n\n1 - Exercicio Dia \n\n2 - Exercicio Par ou Impar \n\n3 - Exercicio Média \n\n4 - Exercicio Verificação de números em ordem crescente \n\n5 - Exercicio Imprimir números pares de 1 a 10 \n\n6 - Exercicio Imprimir os primeiros 10 números da sequência de Fibonacci")
+
+}
