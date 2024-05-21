@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exemplo DOM</title>
+    
 </head>
+
 <body>
-    <script src="script.js"></script>
+
+    <script src="exercicios.js"></script>
+
+    <!-- <h1 id="titulo">Teste</h1>
+
+    <button id="botao" onclick="somarCliques()">Click</button>
+
+    <ul id="minhaLista">
+        <li>Vasco</li>
+        <li>item 02</li>
+    </ul>
+
+    <button id="botao02" onclick="adicionarItem()">Adicionar Item</button>
+    <button onclick = "voltarPagina()">Voltar</button>
+    <button onclick = "FecharPagina()">Fechar</button> -->
+
+    <!-- <script src="script.js"></script> -->
+
+
+    <!-- ////////////////////////////////////////////////////////////////////// -->
+
+    <!-- EX1 -->
+
+    <!-- <button onclick="trocarTexto()">Trocar Texto</button>
+    <p id = "paragrafo">ola</p>
+
+    <script>
+        function trocarTexto(){
+            let paragrafo = document.getElementById("paragrafo")
+            paragrafo.innerText = "tudo bem?"
+            // paragrafo.innerText = "como foi/está sendo seu dia?"
+            // paragrafo.innerText = "até mais"
+        }
+    </script> -->
+
+
+
+    <!-- ////////////////////////////////////////////////////////////////////// -->
+
+    <!-- EX2 -->
+
+
+
+    <!-- <ul id="minhaLista">
+        <li>item1</li>
+        <li>item2</li>
+    </ul>
+
+    <button onclick="adicionarItem()">Add item</button>
+    <button onclick="removerItem()">Remover item</button>
+
+    <script>
+        function adicionarItem() {
+            let novoItem = document.createElement("li")
+            novoItem.textContent = "Novo Item"
+            let lista = document.getElementById("minhaLista")
+            lista.appendChild(novoItem)
+        }
+        
+        function removerItem() {
+            let lista = document.getElementById("minhaLista")
+            
+            if(lista.children.length > 0){
+                
+                lista.removeChild(lista.lastElementChild)
+            }
+        }
+        </script> -->
+
+
+
+<!-- ////////////////////////////////////////////////////////////////////// -->
+
+    <!-- EX3 -->
+
+        <button onclick = "voltarPagina" >Voltar</button>
+        <button onclick = "fecharPagina" >Fechar Página</button>
+        <button onclick = "mostrarLocalizacao">Mostrar Localização</button>
+
+        <script>
+            function voltarPagina(){
+                window.history.back()
+            }
+
+            function mostrarLocalizacao(){
+                alert("Sua página está localizada: " + window.location)
+            }
+
+            function fecharPagina(){
+                window.open("","_self")
+                window.close()
+            }
+
+        </script>
 </body>
+
 </html>
